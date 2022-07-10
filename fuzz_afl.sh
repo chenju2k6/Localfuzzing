@@ -1,0 +1,2 @@
+#AFL_NO_UI=1 AFL_SKIP_CPUFREQ=1 AFL_NO_AFFINITY=1 AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1 AFL_SKIP_CRASHES=1 /afl/afl-fuzz -i input_$1 -o output -d -m none -t 1000+ -p fast -l 2 -c ./$1.cmplog$2 -- ./$1.$2 $3 2147483647
+AFL_NO_UI=1 AFL_SKIP_CPUFREQ=1 AFL_NO_AFFINITY=1 AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1 AFL_SKIP_CRASHES=1 /afl/afl-fuzz -i input_$1 -o output -d -m none -t 1000+ -p fast -l 2 -c ./$1.cmplog -- ./$1 $2 2147483647
